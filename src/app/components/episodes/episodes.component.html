@@ -1,0 +1,23 @@
+<div class="episodes__container">
+
+  <div>
+    <input type="search" (input)="onSearchInputChange($any($event.target).value)" #inputValue
+      placeholder="Search for a episode name..." class="input_episode">
+  </div>
+
+<div class="box">
+  <app-episode *ngFor="let episode of filteredEpisode" [episode]="episode"></app-episode>
+</div>
+  
+
+  <mat-paginator class="paginator"
+      #paginator 
+      (page)="handlePageEvent($event)" 
+      [length]="length" [pageSize]="20"
+      [showFirstLastButtons]="true" 
+      [pageIndex]="pageIndex" 
+      (click)="clearInput()" 
+      aria-label="Select page">
+  </mat-paginator>
+
+</div>

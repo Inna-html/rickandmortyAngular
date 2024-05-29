@@ -1,0 +1,80 @@
+<div class="h__container">
+    <div class="content">
+
+        <div routerLink="home-page" class="logo">
+            Rick <span class="and">and</span>Morty
+        </div>
+
+        <ul class="list-items">
+            <li class="item" routerLink="characters" routerLinkActive="router-link-active">Characters</li>
+            <li class="item" routerLink="locations" routerLinkActive="router-link-active">Locations</li>
+            <li class="item" routerLink="episodes" routerLinkActive="router-link-active">Episodes</li>
+        </ul>
+
+    </div>
+
+
+
+
+
+    <!-- <button class="burger_menu" mat-button [matMenuTriggerFor]="menu">Menu</button> -->
+
+    <!-- <mat-menu #menu class="mat_items">
+        <button mat-menu-item class="mat_item">
+            <li class="item" routerLink="characters" routerLinkActive="router-link-active">Characters</li>
+        </button>
+        <button mat-menu-item class="mat_item">
+            <li class="item" routerLink="locations" routerLinkActive="router-link-active">Locations</li>
+        </button>
+        <button mat-menu-item class="mat_item">
+            <li class="item" routerLink="episodes" routerLinkActive="router-link-active">Episodes</li>
+        </button>
+    </mat-menu> -->
+
+
+
+
+
+    <button class="burger_menu" mat-icon-button [matMenuTriggerFor]="menu">
+        <mat-icon>more_vert</mat-icon>
+    </button>
+
+      <!-- <mat-menu #menu="mat-menu 
+        <button mat-menu-item  class="mat_item">
+            <li class="item" routerLink="characters" routerLinkActive="router-link-active">Characters</li>
+        </button>
+        <button mat-menu-item  class="mat_item">
+            <li class="item" routerLink="locations" routerLinkActive="router-link-active">Locations</li>
+        </button>
+        <button mat-menu-item  class="mat_item"> 
+            <li class="item" routerLink="episodes" routerLinkActive="router-link-active">Episodes</li>
+        </button>
+      </mat-menu> -->
+
+      <!-- <mat-menu >
+        ="matMenu"
+      </mat-menu> -->
+
+
+      <mat-menu #menu class="mat_items">
+        <button mat-menu-item class="mat_item">
+            <li class="item" routerLink="characters" routerLinkActive="router-link-active">Characters</li>
+        </button>
+        <button mat-menu-item class="mat_item">
+            <li class="item" routerLink="locations" routerLinkActive="router-link-active">Locations</li>
+        </button>
+        <button mat-menu-item class="mat_item">
+            <li class="item" routerLink="episodes" routerLinkActive="router-link-active">Episodes</li>
+        </button>
+      </mat-menu>
+
+    
+</div>
+    
+<!-- </div> -->
+
+
+<!-- 
+="matMenu"
+mat-menu-item 
+-->

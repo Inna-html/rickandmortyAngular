@@ -1,0 +1,36 @@
+.container {
+    min-height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow: clip;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+.header {
+    background: #c1e3ee;
+    width: 100%;
+    height: 80px;
+    position: fixed;
+    z-index: 20;
+
+    /* border-bottom: #9cb6bf 2px solid; */
+    box-shadow:  2px 2px 4px 0px gray;
+
+}
+.main {
+    flex: 1 1 auto;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 auto;
+    margin-top: 80px;
+
+    background: #eeeeee;
+}
+.footer {
+    background: #9cb6bf;
+    width: 100%;
+    z-index: 20;
+}

@@ -1,0 +1,38 @@
+.item_locations {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.location {
+    width: 280px;
+    height: 220px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 20px;
+    margin: 10px;
+    box-sizing: border-box;
+    border-radius: 0px 0px 40px 0px;
+    box-shadow:  2px 2px 4px 0px gray;
+    background: #e3d3f8;
+}
+.item_location_name {
+    font-family: 'Frijole', sans-serif;
+}
+.name {
+    font-size: 14px;
+    color: #429a8b;
+    font-family: 'Eater', sans-serif;
+}
+.item_location {
+    margin: 0px;
+    padding: 0px 0px 5px 0px;
+    font-size: 12px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.name_item {
+    font-size: 10px;
+    color: #429a8b;
+    font-family: 'Eater', sans-serif;
+}
+

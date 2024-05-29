@@ -1,0 +1,24 @@
+<div class="locations__container">
+
+  <div>
+    <input type="search" #inputValue (input)="onSearchInputChange($any($event.target).value)"
+      placeholder="Search for a location name..." class="input_location">
+  </div>
+
+<div class="box">
+  <app-location *ngFor="let location of filteredLocations" [location]="location"></app-location>
+</div>
+  
+
+  <mat-paginator class="paginator"
+      #paginator 
+      (page)="handlePageEvent($event)" 
+      [length]="length" 
+      [pageSize]="20"
+      [showFirstLastButtons]="true" 
+      [pageIndex]="pageIndex" 
+      (click)="clearInput()" 
+      aria-label="Select page">
+  </mat-paginator>
+
+</div>

@@ -1,0 +1,23 @@
+<div class="characters__container">
+
+  <div>
+    <input type="search" (input)="onSearchInputChange($any($event.target).value)" #inputValue
+      placeholder="Search for a character name..." class="input_character">
+  </div>
+
+<div class="box">
+  <app-character *ngFor="let character of filteredCharacters" [character]="character"></app-character>
+</div>
+  
+
+  <mat-paginator class="paginator"
+      #paginator 
+      (page)="handlePageEvent($event)" 
+      [length]="length" [pageSize]="20"
+      [showFirstLastButtons]="true" 
+      [pageIndex]="pageIndex" 
+      (click)="clearInput()" 
+      aria-label="Select page">
+  </mat-paginator>
+
+</div>
